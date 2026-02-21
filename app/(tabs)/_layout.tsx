@@ -18,7 +18,7 @@ export default function TabLayout() {
         tabBarButton: HapticTab,
         headerTitleAlign: "left",
         headerRight: () => (
-          <Toolbars>
+          <Toolbars className="mr-4">
             <Toolbars.Button
               alt="Settings"
               type="ghost"
@@ -26,6 +26,7 @@ export default function TabLayout() {
               iconName="notifications"
               size="large"
             />
+            <Toolbars.Avatar size="md" />
           </Toolbars>
         ),
       }}
