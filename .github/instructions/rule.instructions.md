@@ -4,3 +4,4 @@ description: This file describes the project setup and dependencies.
 ---
 
 this project use bun
+for color, create and use color from theme.ts, do not use hard coded color in the codebase and dont hardcode color via tailwind/nativewind classname, because it will make it easy for color mode
