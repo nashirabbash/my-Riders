@@ -1,14 +1,19 @@
+import { useColorScheme } from "@/hooks/use-color-scheme";
 import {
-    DarkTheme,
-    DefaultTheme,
-    ThemeProvider,
+  DarkTheme,
+  DefaultTheme,
+  ThemeProvider,
 } from "@react-navigation/native";
 import { Stack } from "expo-router";
+import * as SplashScreen from "expo-splash-screen";
 import { StatusBar } from "expo-status-bar";
 import "react-native-reanimated";
 import "./global.css";
 
-import { useColorScheme } from "@/hooks/use-color-scheme";
+SplashScreen.setOptions({
+  duration: 500,
+  fade: true,
+});
 
 export const unstable_settings = {
   anchor: "(tabs)",
